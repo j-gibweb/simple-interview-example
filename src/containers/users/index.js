@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
 
-import Posts from '../posts'
 
 import {
   getUsers,
@@ -33,7 +32,6 @@ class Users extends Component {
           )
         })}
 
-        <Route path="/users/:userId/posts" component={Posts} />
       </div>
     )
   }
